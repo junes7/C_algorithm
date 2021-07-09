@@ -1,0 +1,21 @@
+// 비트단위로 NOT 하여 출력하기
+// printf integer after do bitwise not
+// 입력 된 정수를 비트단위로 참/거짓을 바꾼 후 정수로 출력해보자.
+// 비트단위(bitwise)연산자 ~를 붙이면 된다.(~: tilde, 틸드라고 읽는다.)
+// 비트단위(bitwise) 연산자는, ~(bitwise not), &(bitwise and),
+// |(bitwise or), ^(bitwise xor), <<(bitwise left shift),
+// >>(bitwise right shift)가 있다.
+// 1이 입력되었을 때 저장되는 1을 32비트 2진수로 표현하면
+// 00000000 00000000 00000000 00000001 이고, ~1은
+// 11111111 11111111 11111111 11111110 가 되는데 이는 -2를 의미한다.
+// 정수 1개가 입력된다. -2147483648 ~ +2147483647
+// 비트 단위로 1 -> 0, 0 -> 1로 바꾼 후 그 값을 10진수로 출력한다.
+// method 1
+# include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    printf("%d", ~n);
+    return 0;
+}
