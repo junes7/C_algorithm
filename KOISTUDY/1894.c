@@ -16,9 +16,10 @@ int comb(int p,int q){
     else if(d[p][q]!=0){
         return d[p][q];
     }
-    else
+    else{
         d[p][q]=comb(p-1,q-1)+comb(p-1,q);
         return d[p][q];
+    }
 }
 int main(){
     scanf("%d %d",&a,&b);
