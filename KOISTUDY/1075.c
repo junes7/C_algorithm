@@ -17,7 +17,7 @@
 # include <stdio.h>
 long long int d[1000010]={};
 long long int s[100010]={};
-void update(long long int d[],int a,int n,int c){
+void update(int a,int n,int c){
     int j;
     for(j=a;j<=n;j++){
         d[j]+=c;
@@ -36,7 +36,7 @@ int main() {
             s[i]=d[b]-d[a-1];
         else{
             t=d[a]-d[a-1];
-            update(d,a,n,b-t);
+            update(a,n,b-t);
         }
     }
     for(i=1;i<=m;i++){
