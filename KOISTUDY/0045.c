@@ -7,6 +7,6 @@ int main() {
     long long int a,b,c,s;
     scanf("%lld %lld %lld",&a,&b,&c);
     s=(a+b+c);
-    printf("%lld\n%.1llf",s,s/(3.0));
+    printf("%lld\n%.1lf",s,(double)s/3);
     return 0;
 }
