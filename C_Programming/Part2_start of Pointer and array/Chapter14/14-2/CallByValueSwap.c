@@ -1,3 +1,4 @@
+// 값을 전달하는 형태의 함수호출: Call-by-value
 #include<stdio.h>
 void Swap(int n1,int n2){
     int temp=n1;
