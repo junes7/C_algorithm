@@ -1,5 +1,5 @@
 // convert decimal to binary number
-include<stdio.h>
+#include<stdio.h>
 int main(void){
     int num,t=1,s=0;
     printf("10진수 정수 입력: ");
